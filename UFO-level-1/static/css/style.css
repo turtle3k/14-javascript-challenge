@@ -43,6 +43,16 @@ body {
   margin: 0;
 }
 
+.a {
+  text-decoration: none;
+  color: black;
+}
+
+.a:link {
+  text-decoration: none;
+  color: black
+}
+
 /* This CSS styles the ufo icon in the navbar */
 .nav-ufo {
   position: absolute;
@@ -98,7 +108,7 @@ select {
   padding: 20px;
   margin: 0;
   background: black;
-  background-image: url("../images/nasa.jpg");
+  background-image: url("../images/IndependenceDay2.jpg");
   background-attachment: fixed;
   background-position: bottom center;
   background-size: cover;
@@ -108,10 +118,13 @@ select {
   margin-top: 200px;
   font-size: 0.1rem;
   animation: title 1.2s forwards linear;
+  color: black;
 }
 
 .hero p {
   font-size: 2rem;
+  font-weight: bold;
+  color: black;
   opacity: 0;
   animation: subtitle 1.2s forwards linear;
   animation-delay: 1.2s;
@@ -120,7 +133,7 @@ select {
 /* input placeholder color changes */
 .form-control::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: #8e979f;
+  color: black;
 }
 
 .form-control::-moz-placeholder {
