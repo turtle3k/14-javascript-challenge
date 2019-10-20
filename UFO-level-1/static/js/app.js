@@ -29,7 +29,7 @@ button.on("click", function () {
 
     // Select table body list element in the table
     var tbody = d3.select("tbody");
-
+    tbody.html("");
     // Use d3 to update each cell's text w/ sightings values
     // ** put a forEach loop here to print write out each table entry
     sightingsData.forEach(function (sightingsReport) {
@@ -37,6 +37,7 @@ button.on("click", function () {
         Object.entries(sightingsReport).forEach(function ([key, value]) {
             console.log(key, value);
             //Append a cell to the row for each value in the siting report object
+            //** take a look at 3-4, maybe do change instead of append?? */
             var cell = row.append("td");
             cell.text(value);
         });
