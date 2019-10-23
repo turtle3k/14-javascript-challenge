@@ -38,20 +38,6 @@ body {
   background: #1b3146;
 }
 
-.navbar {
-  padding: 5px;
-  margin: 0;
-}
-
-.a {
-  text-decoration: none;
-  color: black;
-}
-
-.a:link {
-  text-decoration: none;
-  color: black
-}
 
 /* This CSS styles the ufo icon in the navbar */
 .nav-ufo {
@@ -79,7 +65,7 @@ select {
   display: block;
   width: 100%;
   padding: 8px;
-  color: #8e979f;
+  /* color: #8e979f; */
   outline: none;
 }
 
@@ -235,4 +221,38 @@ select {
   to {
     opacity: 1;
   }
+}
+
+/* The code attempts to style the navbar */
+.navbar {
+  padding: 5px;
+  margin: 0;
+}
+
+.black-text {
+  color: black;
+}
+
+#black-text {
+  color: black;
+}
+
+.navbar-brand {
+  color: black;
+}
+
+.navbar-brand.href {
+  text-decoration: none;
+  text-decoration-color: black;
+  color: black;
+}
+
+.a {
+  text-decoration: none;
+  color: black;
+}
+
+.a:link {
+  text-decoration: none;
+  color: black
 }
