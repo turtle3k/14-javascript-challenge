@@ -1,22 +1,22 @@
 // from data.js
-var tableData = data;
+let tableData = data;
 
 
 // Select the button
-var button = d3.select("#filter-btn");
+let button = d3.select("#filter-btn");
 
 button.on("click", function () {
 
     
     // Select the input elements and get the raw HTML node
-    var dtInputElement = d3.select("#datetime");
+    let dtInputElement = d3.select("#datetime");
     let cityInputElement = d3.select("#city");
     let stateInputElement = d3.select("#state");
     let countryInputElement = d3.select("#country");
     let shapeInputElement = d3.select("#shape");
 
     // Get the value property of the input elements
-    var dtInputValue = dtInputElement.property("value");
+    let dtInputValue = dtInputElement.property("value");
     let cityInputValue = cityInputElement.property("value").trim().toLowerCase();
     let stateInputValue = stateInputElement.property("value").trim().toLowerCase();
     let countryInputValue = countryInputElement.property("value").trim().toLowerCase();
@@ -59,18 +59,18 @@ button.on("click", function () {
     console.log(sightingsData);
 
     // Select table body list element in the table
-    var tbody = d3.select("tbody");
+    let tbody = d3.select("tbody");
 
     // Clear any previous table data
     tbody.html("");
 
     // Update each cell's text w/ sightings values - i.e. fill out each table entry
     sightingsData.forEach(function (sightingsReport) {
-        var row = tbody.append("tr");
+        let row = tbody.append("tr");
         Object.entries(sightingsReport).forEach(function ([key, value]) {
             console.log(key, value);
             //Append a cell to the row for each value in the sighting report object
-            var cell = row.append("td");
+            let cell = row.append("td");
             cell.text(value);
         });
     });
